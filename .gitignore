@@ -1,0 +1,10 @@
+.sass-cache/
+backstop_data/
+css/style2.css
+node_modules/
+sass/
+backstop.json
+gulpfile.js
+package.json
+index_ready.html
+.idea
