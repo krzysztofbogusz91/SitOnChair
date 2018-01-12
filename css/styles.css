@@ -24,6 +24,11 @@ li{
     margin: 0 auto;
 }
 
+.row-2{
+    width: 50%;
+    float: left;
+}
+
 /*NAVBAR*/
 
 header{
@@ -72,11 +77,136 @@ nav .logo{
     top:50px;
     left: -45px;
     display: block;
+
 }
 
 .nav-ul-mini li{
-    background-color: black;
-    padding: 5px;
+    background-color: #101010;
+    padding: 2px;
     width: 100%;
     text-align: center;
+
+}
+
+.nav-ul-mini li a{
+   text-transform: none;
+    font-weight: 400;
+
+}
+
+/*Hero section*/
+
+/*gallery container styles*/
+
+.arrow a{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 540px;
+    color: #38c2a9;
+    text-decoration: none;
+}
+
+.arrow a:hover{
+    font-size: 65px;
+    font-weight: 700;
+    text-shadow: 1px 5px 10px white;
+    border-radius: 100%;
+}
+
+.arow-right .arrow a{
+    float: right;
+}
+
+.arow-left, .arow-right {
+    width: 10%;
+    float: left;
+
+
+}
+
+.container-gall{
+    width: 80%;
+    float: left;
+}
+
+/*Hero section cd*/
+.hero{
+    width: 100%;
+    /* FF3.6-15 */
+    background: -moz-linear-gradient(top, #ffffff 0%, #d0cfd7 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #d0cfd7 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #d0cfd7 100%);
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d0cfd7', GradientType=0);
+}
+
+.hero h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+
+
+.chair-img{
+    padding-top: 130px;
+    padding-bottom: 70px;
+    padding-right: 25px;
+    transform: scale(1.1);
+}
+
+.text{
+    padding-top: 130px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.hero .button{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    margin: 50px auto;
+    background-color: #38c2a9;
+    color: white;
+    padding: 16px 0px;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.hero .button:hover{
+    box-shadow: 2px 5px 5px black;
+}
+
+/*info section*/
+
+.row-3{
+    width: 33.333%;
+    float: left;
+    height: 250px;
+}
+
+.image-info{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.clair{
+    width: 330px;
+    background-size: cover;
+    background-image: url("../images/box1_img.jpg");
+    height: 225px;
+}
+
+.empty{
+    border: 1px solid grey;
+    height: 250px;
+}
+
+.margarita{
+    width: 330px;
+    background-size: cover;
+    background-image: url("../images/box2_img.jpg");
+    height: 225px;
 }
