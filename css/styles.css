@@ -197,16 +197,53 @@ nav .logo{
     background-size: cover;
     background-image: url("../images/box1_img.jpg");
     height: 225px;
+    padding-top: 150px;
 }
 
 .empty{
     border: 1px solid grey;
     height: 250px;
+    padding:22px;
 }
 
 .margarita{
     width: 330px;
     background-size: cover;
     background-image: url("../images/box2_img.jpg");
+    padding-top: 150px;
     height: 225px;
 }
+
+.white-opacity{
+    width: 328px;
+    background-color: rgba(225, 225, 225, .7);
+    height: 61px;
+    margin-left: 2px;
+}
+
+.border-green{
+    border-bottom: 5px solid #38c2a9;
+    width: 140px;
+    font-weight: 600;
+}
+
+.white-opacity .border-green{
+    padding: 19px 0 0 0;
+    margin-left: 12px;
+}
+
+.info-section{
+    line-height: 20px;
+}
+
+.info-section article:nth-of-type(2){
+    margin-top: 12px;
+    color: #7f7f7f;
+
+}
+
+.info-section article:nth-of-type(3){
+    margin-top: 20px;
+    color: #7f7f7f;
+}
+
