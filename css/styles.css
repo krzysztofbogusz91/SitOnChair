@@ -248,25 +248,92 @@ nav .logo{
 
 .pricing h2.border-green{
     padding-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     width: 326px;
     font-weight: 400;
 }
+
+.plan{
+    color:#38c2a9;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.price-content{
+    margin: 0 auto;
+    color: #c2c2c2;
+    border: 1px solid #c2c2c2;
+    font-weight: 700;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+.price-content .big{
+    font-size: 30px;
+}
+
+.price-content .small{
+    font-size: 15px;
+}
+
+.box-container ul{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #818181;
+}
+
+.box-container li:nth-child(odd){
+   line-height: 40px;
+    background-color: #CBCBCB;
+}
+
+.box-container li:nth-child(even){
+    line-height: 40px;
+}
+
+.button-small{
+
+}
+
+
 
 /*box decoration styles*/
 
 .box-decoration{
     display: block;
     border: 1px solid #c2c2c2;
+    background-color: #f1f1f1;;
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    position: relative;
+    top:-50px;
+    left: 133px;
+}
+
+
+.box-decoration-center{
+    display: block;
+    background-color: #c2c2c2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top:15px;
+    left: 14px;
 }
 
 .box-container{
     border: 1px solid #c2c2c2;
     width: 325px;
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: center;
 }
 
+/*/box on hover/*/
