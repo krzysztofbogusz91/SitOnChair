@@ -244,6 +244,7 @@ nav .logo{
 /*Pricing section style*/
 .pricing{
     background-color: #f1f1f1;
+    padding-bottom: 40px;
 }
 
 .pricing h2.border-green{
@@ -258,9 +259,11 @@ nav .logo{
     text-transform: uppercase;
     font-weight: 400;
     padding-bottom: 15px;
+
 }
 
 .price-content{
+    background-color: white;
     margin: 0 auto;
     color: #c2c2c2;
     border: 1px solid #c2c2c2;
@@ -271,20 +274,25 @@ nav .logo{
     font-size: 20px;
     padding-top: 30px;
     padding-left: 5px;
+    position: relative;
 }
 
 .price-content .big{
     font-size: 30px;
+
 }
 
 .price-content .small{
     font-size: 15px;
+    position: absolute;
+    top: 30px;
+    right: 26px;
 }
 
 .box-container ul{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 3px;
     font-size: 20px;
+    height: 150px;
     color: #818181;
 }
 
@@ -295,10 +303,18 @@ nav .logo{
 
 .box-container li:nth-child(even){
     line-height: 40px;
+    background-color: #f1f1f1;
 }
 
 .button-small{
-
+    background-color: #38c2a9;
+    color: white;
+    text-decoration: none;
+    display: block;
+    line-height: 33px;
+    width: 125px;
+    border-radius: 5px;
+    margin: 0 auto 10px auto;
 }
 
 
@@ -308,7 +324,7 @@ nav .logo{
 .box-decoration{
     display: block;
     border: 1px solid #c2c2c2;
-    background-color: #f1f1f1;;
+    background-color: #fdfdfd;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -325,15 +341,146 @@ nav .logo{
     width: 30px;
     height: 30px;
     position: relative;
-    top:15px;
+    top:14px;
     left: 14px;
 }
 
 .box-container{
+    background-color: #fdfdfd;;
     border: 1px solid #c2c2c2;
     width: 325px;
     padding-top: 10px;
     text-align: center;
+    height: 500px;
 }
 
-/*/box on hover/*/
+/*/box green/*/
+
+.green-box{
+    background-color: #38c2a9;
+}
+
+.green-box .plan{
+    color: white;
+}
+
+.green-box .box-decoration {
+    background-color: #38c2a9;
+    border: 1px solid #38c2a9;
+}
+
+.green-box .box-decoration-center{
+    background-color: white;
+}
+.green-box .button-small{
+    background-color: white;
+    color: #38c2a9;
+}
+
+/*form section styles*/
+
+.row-70{
+    width: 65%;
+    float: left;
+}
+
+.row-30{
+    width: 35%;
+    float: left;
+}
+
+.form-area h2.border-green{
+    padding-top: 40px;
+    margin-bottom: 80px;
+    width: 326px;
+    font-weight: 400;
+}
+
+.contact-form{
+    font-size: 25px;
+}
+
+.contact-form input{
+    width: 640px;
+    height: 65px;
+    line-height: 65px;
+    margin: 10px auto;
+    padding: 0 5px;
+}
+
+.contact-form textarea{
+    resize: none;
+    width: 640px;
+    height: 185px;
+    line-height: 27px;
+    margin: 10px auto;
+    padding: 5px 5px;
+}
+
+.button-green-big{
+    text-transform: uppercase;
+    background-color: #38c2a9;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 29px;
+    line-height: 70px;
+    text-align: center;
+    height: 70px;
+    width: 340px;
+    margin: 35px auto;
+    font-weight: 600;
+}
+
+
+.check-box label{
+    font-size: 25px;
+    color: #c2c2c2;
+
+}
+/*custom check box*/
+
+/*.container-for-checkbox{*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*cursor: pointer;*/
+    /*font-size: 22px;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+/*}*/
+
+/*.check-box input{*/
+    /*position: absolute;*/
+    /*opacity: 0;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.checkmark {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*height: 50px;*/
+    /*width: 50px;*/
+    /*background-color: #eee;*/
+    /*border: 1px solid #818181;*/
+/*}*/
+
+/*.checkmark:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*display: none;*/
+/*}*/
+
+/*.container-for-checkbox input:checked ~ .checkmark:after {*/
+    /*display: block;*/
+/*}*/
+
+/*.checkmark:after {*/
+    /*//background-image: url("images/form_ok");*/
+    /*//background-size: cover;*/
+    /*background-color: #38c2a9;*/
+
+/*}*/
