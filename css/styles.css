@@ -389,6 +389,10 @@ nav .logo{
     float: left;
 }
 
+.form-area img{
+    padding-left: 50px;
+}
+
 .form-area h2.border-green{
     padding-top: 40px;
     margin-bottom: 80px;
@@ -401,6 +405,7 @@ nav .logo{
 }
 
 .contact-form input{
+    border: 1px solid #38c2a9;
     width: 640px;
     height: 65px;
     line-height: 65px;
@@ -409,6 +414,7 @@ nav .logo{
 }
 
 .contact-form textarea{
+    border: 1px solid #38c2a9;
     resize: none;
     width: 640px;
     height: 185px;
@@ -435,11 +441,18 @@ nav .logo{
 
 
 .check-box label{
-    font-size: 25px;
+    font-size: 20px;
     color: #c2c2c2;
+    display: block;
 
 }
 /*custom check box*/
+
+.container-for-checkbox input{
+    height: 50px;
+    width: 50px;
+    color: #38c2a9;
+}
 
 /*.container-for-checkbox{*/
     /*display: block;*/
@@ -484,3 +497,37 @@ nav .logo{
     /*background-color: #38c2a9;*/
 
 /*}*/
+
+/*/footer - styles*/
+footer{
+    line-height: 80px;
+    color: #7f7f7f;
+}
+
+footer article{
+    float: left;
+}
+footer .logo{
+    float: right;
+    color: #7f7f7f;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer .logo span{
+    color: #101010;
+}
+
+footer .media-list{
+    float: left;
+    padding-left: 350px;
+}
+
+.media-list li{
+    float: left;
+    margin: 0 5px;
+    padding: 10px 0;
+}
+
+
