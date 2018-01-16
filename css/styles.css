@@ -82,6 +82,7 @@ nav .logo{
     top:50px;
     left: -45px;
     display: block;
+    opacity: 0;
 
 }
 
@@ -97,6 +98,10 @@ nav .logo{
    text-transform: none;
     font-weight: 400;
 
+}
+/*/-here goes real animation later on-/*/
+.nav-ul-mini:hover{
+    opacity: 1;
 }
 
 /*Hero section*/
@@ -176,7 +181,7 @@ nav .logo{
 }
 
 .hero .button:hover{
-    box-shadow: 2px 5px 5px black;
+    box-shadow: 2px 5px 5px #818181;
 }
 
 /*info section*/
@@ -316,6 +321,10 @@ nav .logo{
     margin: 0 auto 10px auto;
 }
 
+.button-small:hover{
+    box-shadow: 2px 5px 5px #818181;
+}
+
 
 
 /*box decoration styles*/
@@ -437,7 +446,9 @@ nav .logo{
     margin: 35px auto;
     font-weight: 600;
 }
-
+.button-green-big:hover{
+    box-shadow: 2px 5px 5px #818181;
+}
 
 .check-box article{
     font-size: 20px;
