@@ -195,7 +195,7 @@ nav .logo{
 }
 
 .empty{
-    border: 1px solid grey;
+    border: 1px solid #c2c2c2;
     height: 250px;
     padding:22px;
 }
@@ -233,7 +233,6 @@ nav .logo{
 .info-section article:nth-of-type(2){
     margin-top: 12px;
     color: #7f7f7f;
-
 }
 
 .info-section article:nth-of-type(3){
@@ -440,20 +439,14 @@ nav .logo{
 }
 
 
-.check-box label{
+.check-box article{
     font-size: 20px;
     color: #c2c2c2;
     display: block;
     padding-top: 2px;
 
 }
-/*custom check box*/
-
-.container-for-checkbox input{
-    height: 50px;
-    width: 50px;
-    color: #38c2a9;
-}
+/*custom check box and positioning*/
 
 .container-for-float{
     width: 100%;
@@ -466,55 +459,59 @@ nav .logo{
     float: left;
 }
 
-.check-box label{
+.check-box article {
     float: left;
     width: 85%;
+    margin-left: 55px;
 }
 
+/* Customize the label */
+.container-for-checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
+/* Hide default checkbox */
+.container-for-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
 
-/*.container-for-checkbox{*/
-    /*display: block;*/
-    /*position: relative;*/
-    /*cursor: pointer;*/
-    /*font-size: 22px;*/
-    /*user-select: none;*/
-/*}*/
+/* Create new checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color:white;
+    border: 1px solid #38c2a9;
+}
 
-/*.check-box input{*/
-    /*position: absolute;*/
-    /*opacity: 0;*/
-    /*z-index: -1;*/
-    /*cursor: pointer;*/
-/*}*/
+/* Add background img on checked */
+.container input:checked ~ .checkmark {
+    background-image: url("../images/form_ok.jpg");
+    background-size: cover;
+}
 
-/*.checkmark {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*height: 50px;*/
-    /*width: 50px;*/
-    /*background-color: #eee;*/
-    /*background-size: cover;*/
-    /*border: 1px solid #38c2a9;*/
-/*}*/
+/* Chidde when not checked */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
 
-/*.checkmark:after {*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*display: block;*/
-/*}*/
-/*.checkmark:after {*/
-    /*background-image: url("../images/form_ok.jpg");*/
-    /*background-size: cover;*/
-/*}*/
-
-/*.container-for-checkbox input:checked ~ .checkmark:after {*/
-    /*display: block;*/
-/*}*/
-
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
 
 
 
