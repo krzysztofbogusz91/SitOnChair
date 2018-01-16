@@ -444,6 +444,7 @@ nav .logo{
     font-size: 20px;
     color: #c2c2c2;
     display: block;
+    padding-top: 2px;
 
 }
 /*custom check box*/
@@ -454,20 +455,36 @@ nav .logo{
     color: #38c2a9;
 }
 
+.container-for-float{
+    width: 100%;
+    height: 44px;
+    padding-left: 15px;
+}
+
+.container-for-checkbox{
+    width: 15%;
+    float: left;
+}
+
+.check-box label{
+    float: left;
+    width: 85%;
+}
+
+
+
 /*.container-for-checkbox{*/
     /*display: block;*/
     /*position: relative;*/
     /*cursor: pointer;*/
     /*font-size: 22px;*/
-    /*-webkit-user-select: none;*/
-    /*-moz-user-select: none;*/
-    /*-ms-user-select: none;*/
     /*user-select: none;*/
 /*}*/
 
 /*.check-box input{*/
     /*position: absolute;*/
     /*opacity: 0;*/
+    /*z-index: -1;*/
     /*cursor: pointer;*/
 /*}*/
 
@@ -478,25 +495,28 @@ nav .logo{
     /*height: 50px;*/
     /*width: 50px;*/
     /*background-color: #eee;*/
-    /*border: 1px solid #818181;*/
+    /*background-size: cover;*/
+    /*border: 1px solid #38c2a9;*/
 /*}*/
 
 /*.checkmark:after {*/
     /*content: "";*/
     /*position: absolute;*/
-    /*display: none;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*display: block;*/
+/*}*/
+/*.checkmark:after {*/
+    /*background-image: url("../images/form_ok.jpg");*/
+    /*background-size: cover;*/
 /*}*/
 
 /*.container-for-checkbox input:checked ~ .checkmark:after {*/
     /*display: block;*/
 /*}*/
 
-/*.checkmark:after {*/
-    /*//background-image: url("images/form_ok");*/
-    /*//background-size: cover;*/
-    /*background-color: #38c2a9;*/
 
-/*}*/
+
 
 /*/footer - styles*/
 footer{
