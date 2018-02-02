@@ -1,115 +1,122 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
 }
 
-.container::before, .container::after{
+.container::before, .container::after {
     content: "";
     display: block;
     clear: both;
 }
 
-li{
+li {
     list-style: none;
 
 }
 
-.container{
+.container {
     width: 1050px;
     margin: 0 auto;
 }
 
-.row-2{
+.row-2 {
     width: 50%;
     float: left;
 }
 
-.row-3{
+.row-3 {
     width: 33.333%;
     float: left;
 }
 
 /*NAVBAR*/
 
-header{
+header {
     background-color: #101010;
     color: white;
     height: 40px;
 }
 
-.nav-ul li a{
+.nav-ul li a {
     display: block;
     color: white;
     text-decoration: none;
     font-size: 16px;
-    text-transform:uppercase ;
+    text-transform: uppercase;
     line-height: 40px;
     font-weight: 600;
 }
 
-nav .logo{
+nav .logo {
     float: left;
     font-size: 16px;
     line-height: 40px;
     font-weight: 600;
-    text-transform:uppercase ;
+    text-transform: uppercase;
 }
 
-.logo-green{
+.logo-green {
     color: #38c2a9;
 }
 
-.nav-ul{
+.nav-ul {
     float: right;
 }
 
-.nav-ul li{
+.nav-ul li {
     float: left;
     margin: 0 10px;
 }
 
-.nav-ul li:nth-of-type(1){
+.nav-ul li:nth-of-type(1) {
     position: relative;
 }
 
-.nav-ul-mini{
+.nav-ul-mini {
     position: absolute;
-    top:50px;
+    top: -150px;
     left: -45px;
     display: block;
     opacity: 0;
-
+    width: 150px;
+    background-color: #101010;
 }
 
-.nav-ul-mini li{
-    background-color: #101010;
-    padding: 2px;
+.nav-ul-mini li {
     width: 100%;
+    margin: 0 auto;
     text-align: center;
 
 }
 
-.nav-ul-mini li a{
-   text-transform: none;
+.nav-ul-mini li a {
+    text-transform: none;
     font-weight: 400;
 
 }
+
 /*/-here goes real animation later on-/*/
-.company:hover + .nav-ul-mini{
-    opacity: 1;
+.show {
+    animation: sho 1s forwards;
+
+}
+@keyframes sho{
+    100%{
+        top:50px;
+        opacity: 1;
+    }
 }
 
 /*Hero section*/
 
 /*gallery container styles*/
 
-
-.arrow a{
+.arrow a {
     font-size: 60px;
     font-weight: 500;
     color: #38c2a9;
@@ -117,13 +124,13 @@ nav .logo{
 
 }
 
-.arrow a:hover{
+.arrow a:hover {
     font-size: 65px;
     text-shadow: 1px 5px 10px white;
     border-radius: 100%;
 }
 
-.arow-right .arrow a{
+.arow-right .arrow a {
     float: right;
 }
 
@@ -137,13 +144,13 @@ nav .logo{
 
 }
 
-.container-gall{
+.container-gall {
     width: 80%;
     float: left;
 }
 
 /*Hero section cd*/
-.hero{
+.hero {
     width: 100%;
     /* FF3.6-15 */
     background: -moz-linear-gradient(top, #ffffff 0%, #d0cfd7 100%);
@@ -155,25 +162,25 @@ nav .logo{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d0cfd7', GradientType=0);
 }
 
-.hero h1{
+.hero h1 {
     text-transform: uppercase;
     font-size: 40px;
 }
 
-.chair-img{
+.chair-img {
     padding-top: 130px;
     padding-bottom: 70px;
     padding-right: 25px;
     transform: scale(1.1);
 }
 
-.text{
+.text {
     padding-top: 130px;
     padding-right: 25px;
     text-align: center;
 }
 
-.hero .button{
+.hero .button {
     text-decoration: none;
     text-transform: uppercase;
     display: block;
@@ -186,18 +193,18 @@ nav .logo{
     border-radius: 5px;
 }
 
-.hero .button:hover{
+.hero .button:hover {
     box-shadow: 2px 5px 5px #818181;
 }
 
 /*info section*/
 
-.image-info{
+.image-info {
     margin-top: 30px;
     margin-bottom: 70px;
 }
 
-.clair{
+.clair {
     width: 330px;
     background-size: cover;
     background-image: url("../images/box1_img.jpg");
@@ -205,13 +212,13 @@ nav .logo{
     padding-top: 150px;
 }
 
-.empty{
+.empty {
     border: 1px solid #c2c2c2;
     height: 250px;
-    padding:22px;
+    padding: 22px;
 }
 
-.margarita{
+.margarita {
     width: 330px;
     background-size: cover;
     background-image: url("../images/box2_img.jpg");
@@ -219,60 +226,64 @@ nav .logo{
     height: 225px;
 }
 
-.white-opacity{
+.white-opacity {
     width: 328px;
     background-color: rgba(225, 225, 225, .7);
     height: 61px;
     margin-left: 2px;
 }
 
-.border-green{
+.hide-info{
+    opacity: 0;
+}
+
+.border-green {
     border-bottom: 5px solid #38c2a9;
     width: 140px;
     font-weight: 600;
 }
 
-.white-opacity .border-green{
+.white-opacity .border-green {
     padding: 19px 0 0 0;
     margin-left: 12px;
 }
 
-.info-section{
+.info-section {
     line-height: 20px;
 }
 
-.info-section article:nth-of-type(2){
+.info-section article:nth-of-type(2) {
     margin-top: 12px;
     color: #7f7f7f;
 }
 
-.info-section article:nth-of-type(3){
+.info-section article:nth-of-type(3) {
     margin-top: 20px;
     color: #7f7f7f;
 }
 
 /*Pricing section style*/
-.pricing{
+.pricing {
     background-color: #f1f1f1;
     padding-bottom: 40px;
 }
 
-.pricing h2.border-green{
+.pricing h2.border-green {
     padding-top: 40px;
     margin-bottom: 80px;
     width: 326px;
     font-weight: 400;
 }
 
-.plan{
-    color:#38c2a9;
+.plan {
+    color: #38c2a9;
     text-transform: uppercase;
     font-weight: 400;
     padding-bottom: 15px;
 
 }
 
-.price-content{
+.price-content {
     background-color: white;
     margin: 0 auto;
     color: #c2c2c2;
@@ -287,36 +298,36 @@ nav .logo{
     position: relative;
 }
 
-.price-content .big{
+.price-content .big {
     font-size: 30px;
 
 }
 
-.price-content .small{
+.price-content .small {
     font-size: 15px;
     position: absolute;
     top: 30px;
     right: 26px;
 }
 
-.box-container ul{
+.box-container ul {
     margin: 30px 3px;
     font-size: 20px;
     height: 150px;
     color: #818181;
 }
 
-.box-container li:nth-child(odd){
-   line-height: 40px;
+.box-container li:nth-child(odd) {
+    line-height: 40px;
     background-color: #CBCBCB;
 }
 
-.box-container li:nth-child(even){
+.box-container li:nth-child(even) {
     line-height: 40px;
     background-color: #f1f1f1;
 }
 
-.button-small{
+.button-small {
     background-color: #38c2a9;
     color: white;
     text-decoration: none;
@@ -327,15 +338,13 @@ nav .logo{
     margin: 0 auto 10px auto;
 }
 
-.button-small:hover{
+.button-small:hover {
     box-shadow: 2px 5px 5px #818181;
 }
 
-
-
 /*box decoration styles*/
 
-.box-decoration{
+.box-decoration {
     display: block;
     border: 1px solid #c2c2c2;
     background-color: #fdfdfd;
@@ -343,23 +352,22 @@ nav .logo{
     width: 60px;
     height: 60px;
     position: relative;
-    top:-50px;
+    top: -50px;
     left: 133px;
 }
 
-
-.box-decoration-center{
+.box-decoration-center {
     display: block;
     background-color: #c2c2c2;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     position: relative;
-    top:14px;
+    top: 14px;
     left: 14px;
 }
 
-.box-container{
+.box-container {
     background-color: #fdfdfd;;
     border: 1px solid #c2c2c2;
     width: 325px;
@@ -370,11 +378,11 @@ nav .logo{
 
 /*/box green/*/
 
-.green-box{
+.green-box {
     background-color: #38c2a9;
 }
 
-.green-box .plan{
+.green-box .plan {
     color: white;
 }
 
@@ -383,42 +391,43 @@ nav .logo{
     border: 1px solid #38c2a9;
 }
 
-.green-box .box-decoration-center{
+.green-box .box-decoration-center {
     background-color: white;
 }
-.green-box .button-small{
+
+.green-box .button-small {
     background-color: white;
     color: #38c2a9;
 }
 
 /*form section styles*/
 
-.row-70{
+.row-70 {
     width: 65%;
     float: left;
 }
 
-.row-30{
+.row-30 {
     width: 35%;
     float: left;
 }
 
-.form-area img{
+.form-area img {
     padding-left: 50px;
 }
 
-.form-area h2.border-green{
+.form-area h2.border-green {
     padding-top: 40px;
     margin-bottom: 80px;
     width: 326px;
     font-weight: 400;
 }
 
-.contact-form{
+.contact-form {
     font-size: 25px;
 }
 
-.contact-form input{
+.contact-form input {
     border: 1px solid #38c2a9;
     width: 640px;
     height: 65px;
@@ -427,7 +436,7 @@ nav .logo{
     padding: 0 5px;
 }
 
-.contact-form textarea{
+.contact-form textarea {
     border: 1px solid #38c2a9;
     resize: none;
     width: 640px;
@@ -437,7 +446,7 @@ nav .logo{
     padding: 5px 5px;
 }
 
-.button-green-big{
+.button-green-big {
     text-transform: uppercase;
     background-color: #38c2a9;
     text-decoration: none;
@@ -452,26 +461,28 @@ nav .logo{
     margin: 35px auto;
     font-weight: 600;
 }
-.button-green-big:hover{
+
+.button-green-big:hover {
     box-shadow: 2px 5px 5px #818181;
 }
 
-.check-box article{
+.check-box article {
     font-size: 20px;
     color: #c2c2c2;
     display: block;
     padding-top: 2px;
 
 }
+
 /*custom check box and positioning*/
 
-.container-for-float{
+.container-for-float {
     width: 100%;
     height: 44px;
     padding-left: 15px;
 }
 
-.container-for-checkbox{
+.container-for-checkbox {
     width: 15%;
     float: left;
 }
@@ -508,7 +519,7 @@ nav .logo{
     left: 0;
     height: 50px;
     width: 50px;
-    background-color:white;
+    background-color: white;
     border: 1px solid #38c2a9;
 }
 
@@ -530,18 +541,17 @@ nav .logo{
     display: block;
 }
 
-
-
 /*/footer - styles*/
-footer{
+footer {
     line-height: 80px;
     color: #7f7f7f;
 }
 
-footer article{
+footer article {
     float: left;
 }
-footer .logo{
+
+footer .logo {
     float: right;
     color: #7f7f7f;
     font-size: 20px;
@@ -549,16 +559,16 @@ footer .logo{
     text-transform: uppercase;
 }
 
-footer .logo span{
+footer .logo span {
     color: #101010;
 }
 
-footer .media-list{
+footer .media-list {
     float: left;
     padding-left: 350px;
 }
 
-.media-list li{
+.media-list li {
     float: left;
     margin: 0 5px;
     padding: 10px 0;
