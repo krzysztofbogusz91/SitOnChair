@@ -100,7 +100,7 @@ nav .logo{
 
 }
 /*/-here goes real animation later on-/*/
-.nav-ul-mini:hover{
+.company:hover + .nav-ul-mini{
     opacity: 1;
 }
 
@@ -108,12 +108,13 @@ nav .logo{
 
 /*gallery container styles*/
 
+
 .arrow a{
     font-size: 60px;
     font-weight: 500;
-    line-height: 540px;
     color: #38c2a9;
     text-decoration: none;
+
 }
 
 .arrow a:hover{
@@ -129,6 +130,11 @@ nav .logo{
 .arow-left, .arow-right {
     width: 10%;
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 541px;
+
 }
 
 .container-gall{
