@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var infoBox = document.querySelectorAll('.image-info');
     var hideBox = document.querySelectorAll('.white-opacity');
     console.log(infoBox);
+    //slider
+    var imageTwo = document.querySelector('.img-two');
+    var imageOne = document.querySelector('.img-one');
+    var arrows = document.querySelectorAll('.arrow > a');
+
 
     //show hidden menu --- need to fix this mechanism ---
     companyLi.addEventListener('mouseenter', function () {
@@ -28,6 +33,19 @@ document.addEventListener('DOMContentLoaded', function () {
         infoBox[i].addEventListener('mouseleave',function () {
             this.firstElementChild.classList.remove('hide-info');
         });
+    }
+
+    //slider
+    for(var i = 0; i < arrows.length; i++){
+        arrows[i].addEventListener('click', function () {
+            if(imageTwo.classList.contains('hidden') ===true){
+                imageTwo.classList.remove('hidden');
+                imageOne.classList.add('hidden');
+            }else{
+                imageTwo.classList.add('hidden');
+                imageOne.classList.remove('hidden');
+            }
+        })
     }
 
 
