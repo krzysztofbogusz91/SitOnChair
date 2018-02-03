@@ -735,22 +735,24 @@ footer .media-list {
 }
 .panel_left {
     display: inline-block;
-    width: 185px;
+    width: 165px;
     vertical-align: top;
     padding-bottom:10px;
     border-bottom:1px solid #e7e7e7;
     height: 135px;
+    float: left;
 }
 
 .panel_right {
     display: inline-block;
-    width: 100px;
+    width: 50px;
     border-left:1px solid #e7e7e7;
     text-align: right;
     vertical-align: top;
     padding-bottom:10px;
     border-bottom:1px solid #e7e7e7;
     height: 135px;
+    float: left;
 }
 
 .panel_left h4 , .panel_right h4{

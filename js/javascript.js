@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //function for checking and seting order summary
     function checkAndSet(check) {
 
+        //Neeed to add subtraction on change of chair!
+
         if(check.parentElement.classList.contains('chair-title')){
             nameTitle.innerText = check.innerText;
             valTitle.innerText = check.dataset.price;
