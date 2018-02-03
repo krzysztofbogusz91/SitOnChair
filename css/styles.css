@@ -815,6 +815,10 @@ footer .media-list {
     top: 54px;
     display:none;
 }
+
+.show_me{
+    display: block;
+}
 .list_panel li {
     margin-top:10px;
     cursor: pointer;
