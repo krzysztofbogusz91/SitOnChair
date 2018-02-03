@@ -50,17 +50,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //slider
+    function slide() {
+        if (imageTwo.classList.contains('hidden') === true) {
+            imageTwo.classList.remove('hidden');
+            imageOne.classList.add('hidden');
+        } else {
+            imageTwo.classList.add('hidden');
+            imageOne.classList.remove('hidden');
+        }
+    }
+
     for (var i = 0; i < arrows.length; i++) {
         arrows[i].addEventListener('click', function () {
-            if (imageTwo.classList.contains('hidden') === true) {
-                imageTwo.classList.remove('hidden');
-                imageOne.classList.add('hidden');
-            } else {
-                imageTwo.classList.add('hidden');
-                imageOne.classList.remove('hidden');
-            }
+            slide();
         })
     }
+    //dynamic automatic slide
+    setInterval(slide,3000);
 
     //form list chose options
     for (var i = 0; i < listArrow.length; i++) {
