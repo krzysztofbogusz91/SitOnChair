@@ -54,9 +54,16 @@ document.addEventListener('DOMContentLoaded', function () {
         if (imageTwo.classList.contains('hidden') === true) {
             imageTwo.classList.remove('hidden');
             imageOne.classList.add('hidden');
+            //animation
+            imageTwo.style.animation= 'anim2 5s forwards linear';
+            imageOne.style.animation = 'none';
         } else {
             imageTwo.classList.add('hidden');
             imageOne.classList.remove('hidden');
+
+            //animation
+            imageTwo.style.animation = 'none';
+            imageOne.style.animation= 'anim1 5s forwards linear';
         }
     }
 
@@ -66,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     //dynamic automatic slide
-    setInterval(slide,3000);
+    setInterval(slide,5000);
 
     //form list chose options
     for (var i = 0; i < listArrow.length; i++) {
